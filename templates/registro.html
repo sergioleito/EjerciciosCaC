@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="../index.html">
+            <!-- mas adelante agregaremos iconos -->
+            <span>Sonidos</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenido -->
+    <main>
+        <!-- form-wrapper: Formulario -->
+     <section id="form-wrapper" >
+      <h2>Registro</h2>
+      
+      <form action="#" id="formRegister" method="GET" novalidate>
+       <div class="form-control">
+        <label >Nombre</label>
+        <input type="text" name="firstname" id="firstname" required>
+       </div>
+       <div class="error" id="error-firstname"></div>
+       <div class="form-control">
+        <label>Apellido</label>
+        <input type="text" name="lastname" id="lastname" required >
+       </div>
+        <div class="error" id="error-lastname"></div>
+        <div class="form-control">
+            
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="error" id="error-email"></div>
+        <div class="form-control">
+            <label>Contraseña</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="error" id="error-password"></div>
+         <div class="form-control">
+            <label id="label-birthdate">Fecha de Nacimiento</label>
+            <input type="date" name="birthdate" id="birthdate" required >
+         </div>
+
+   <div class="form-control">
+    <select name="country" id="country" class="form-select">
+        <option value="">Pais</option>
+        <option value="AR">Argentina</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+
+    </select>
+   </div>
+   <div class="form-terms">
+    <div class="terms">
+      <input type="checkbox"  id="terms" >
+      <label for="terms">Acepto terminos y condiciones</label>
+    </div>
+   </div>
+   <button type="submit">Registrate</button>
+   <div class="form-help">
+    <a href="#">Necesitas ayuda?</a>
+   </div>
+    </form>
+     </section>
+    </main>
+    <!-- pie -->
+    <footer>
+              <a href="">Términos y condiciones</a>
+              <a href="">Preguntas frecuentes</a>
+              <a href="">Ayuda</a>
+    </footer>
+</body>
+</html>
